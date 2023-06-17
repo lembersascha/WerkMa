@@ -80,7 +80,7 @@
             // 
             this.labelControl1.Appearance.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
             this.labelControl1.Appearance.Options.UseFont = true;
-            this.labelControl1.Location = new System.Drawing.Point(479, 297);
+            this.labelControl1.Location = new System.Drawing.Point(471, 477);
             this.labelControl1.MinimumSize = new System.Drawing.Size(0, 26);
             this.labelControl1.Name = "labelControl1";
             this.labelControl1.Size = new System.Drawing.Size(56, 26);
@@ -428,7 +428,6 @@
             this.groupControl4.Appearance.Options.UseBorderColor = true;
             this.groupControl4.AppearanceCaption.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.groupControl4.AppearanceCaption.Options.UseForeColor = true;
-            this.groupControl4.AutoSize = true;
             this.groupControl4.Controls.Add(this.Te_DecryptetConnectionString);
             this.groupControl4.Controls.Add(this.Te_ConnectionString);
             this.groupControl4.Controls.Add(this.Btn_StringSave);
@@ -437,9 +436,9 @@
             this.groupControl4.GroupStyle = DevExpress.Utils.GroupStyle.Light;
             this.groupControl4.Location = new System.Drawing.Point(12, 235);
             this.groupControl4.Name = "groupControl4";
-            this.groupControl4.Size = new System.Drawing.Size(770, 100);
+            this.groupControl4.Size = new System.Drawing.Size(770, 108);
             this.groupControl4.TabIndex = 20;
-            this.groupControl4.Text = "Server IP Testen";
+            this.groupControl4.Text = "Konfogurationsdatei Schreiben / Lesen";
             // 
             // Frm_DatabaseManager
             // 
