@@ -1,0 +1,18 @@
+﻿<XtraSerializer version="1.0" application="Appearances">
+  <property name="Properties.AdvancedModeOptions.LabelAppearance" iskey="true" value="Properties.AdvancedModeOptions.LabelAppearance">
+    <property name="Options" isnull="true" iskey="true">
+      <property name="UseForeColor">true</property>
+      <property name="UseTextOptions">true</property>
+      <property name="UseBorderColor">true</property>
+      <property name="UseBackColor">true</property>
+      <property name="UseFont">true</property>
+    </property>
+    <property name="ForeColor">Black</property>
+    <property name="BorderColor">White</property>
+    <property name="BackColor">WhiteSmoke</property>
+    <property name="TextOptions" isnull="true" iskey="true">
+      <property name="VAlignment">Center</property>
+    </property>
+    <property name="Font">Arial, 12pt, style=Bold</property>
+  </property>
+</XtraSerializer>

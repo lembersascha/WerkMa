@@ -1,0 +1,19 @@
+﻿<XtraSerializer version="1.0" application="Appearances">
+  <property name="Appearance" iskey="true" value="Appearance">
+    <property name="Options" isnull="true" iskey="true">
+      <property name="UseForeColor">true</property>
+      <property name="UseTextOptions">true</property>
+      <property name="UseBorderColor">true</property>
+      <property name="UseBackColor">true</property>
+      <property name="UseFont">true</property>
+    </property>
+    <property name="ForeColor">Black</property>
+    <property name="BorderColor">Black</property>
+    <property name="BackColor">192, 255, 192</property>
+    <property name="TextOptions" isnull="true" iskey="true">
+      <property name="HAlignment">Center</property>
+      <property name="VAlignment">Center</property>
+    </property>
+    <property name="Font">Arial, 12pt, style=Bold</property>
+  </property>
+</XtraSerializer>
