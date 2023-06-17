@@ -34,30 +34,35 @@
             this.LblBenutzer = new DevExpress.XtraEditors.LabelControl();
             this.LblDatabase = new DevExpress.XtraEditors.LabelControl();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
-            this.Btn_Ping = new DevExpress.XtraEditors.SimpleButton();
-            this.Te_ServerIp = new DevExpress.XtraEditors.TextEdit();
-            this.BtnTestConnection = new DevExpress.XtraEditors.SimpleButton();
             this.TeServer = new DevExpress.XtraEditors.TextEdit();
             this.BtnStringBuild = new DevExpress.XtraEditors.SimpleButton();
             this.Te_Username = new DevExpress.XtraEditors.TextEdit();
             this.TeDatabase = new DevExpress.XtraEditors.TextEdit();
             this.Te_Password = new DevExpress.XtraEditors.TextEdit();
+            this.Btn_Ping = new DevExpress.XtraEditors.SimpleButton();
+            this.Te_ServerIp = new DevExpress.XtraEditors.TextEdit();
+            this.BtnTestConnection = new DevExpress.XtraEditors.SimpleButton();
             this.Btn_StringRead = new DevExpress.XtraEditors.SimpleButton();
             this.Te_DecryptetConnectionString = new DevExpress.XtraEditors.TextEdit();
             this.Btn_StringSave = new DevExpress.XtraEditors.SimpleButton();
             this.Te_ConnectionString = new DevExpress.XtraEditors.TextEdit();
             this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
+            this.groupControl3 = new DevExpress.XtraEditors.GroupControl();
+            this.groupControl4 = new DevExpress.XtraEditors.GroupControl();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Te_ServerIp.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TeServer.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Te_Username.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TeDatabase.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Te_Password.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Te_ServerIp.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Te_DecryptetConnectionString.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Te_ConnectionString.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).BeginInit();
             this.groupControl2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl4)).BeginInit();
+            this.groupControl4.SuspendLayout();
             this.SuspendLayout();
             // 
             // LblServer
@@ -75,7 +80,7 @@
             // 
             this.labelControl1.Appearance.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
             this.labelControl1.Appearance.Options.UseFont = true;
-            this.labelControl1.Location = new System.Drawing.Point(479, 276);
+            this.labelControl1.Location = new System.Drawing.Point(479, 297);
             this.labelControl1.MinimumSize = new System.Drawing.Size(0, 26);
             this.labelControl1.Name = "labelControl1";
             this.labelControl1.Size = new System.Drawing.Size(56, 26);
@@ -139,67 +144,6 @@
             this.groupControl1.Size = new System.Drawing.Size(320, 196);
             this.groupControl1.TabIndex = 14;
             this.groupControl1.Text = "Server String Erstellen";
-            // 
-            // Btn_Ping
-            // 
-            this.Btn_Ping.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.Btn_Ping.Appearance.BorderColor = System.Drawing.Color.Black;
-            this.Btn_Ping.Appearance.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
-            this.Btn_Ping.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.Btn_Ping.Appearance.Options.UseBackColor = true;
-            this.Btn_Ping.Appearance.Options.UseBorderColor = true;
-            this.Btn_Ping.Appearance.Options.UseFont = true;
-            this.Btn_Ping.Appearance.Options.UseForeColor = true;
-            this.Btn_Ping.Appearance.Options.UseTextOptions = true;
-            this.Btn_Ping.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.Btn_Ping.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
-            this.Btn_Ping.ImageOptions.Image = global::Lember.WerkMa.Properties.Resources.stretch_16x161;
-            this.Btn_Ping.Location = new System.Drawing.Point(411, 26);
-            this.Btn_Ping.Name = "Btn_Ping";
-            this.Btn_Ping.Size = new System.Drawing.Size(160, 26);
-            this.Btn_Ping.TabIndex = 17;
-            this.Btn_Ping.Text = "Ping";
-            this.Btn_Ping.Click += new System.EventHandler(this.Btn_Ping_Click);
-            // 
-            // Te_ServerIp
-            // 
-            this.Te_ServerIp.Location = new System.Drawing.Point(5, 26);
-            this.Te_ServerIp.Name = "Te_ServerIp";
-            this.Te_ServerIp.Properties.Appearance.BackColor = System.Drawing.Color.White;
-            this.Te_ServerIp.Properties.Appearance.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
-            this.Te_ServerIp.Properties.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.Te_ServerIp.Properties.Appearance.Options.UseBackColor = true;
-            this.Te_ServerIp.Properties.Appearance.Options.UseFont = true;
-            this.Te_ServerIp.Properties.Appearance.Options.UseForeColor = true;
-            this.Te_ServerIp.Properties.Appearance.Options.UseTextOptions = true;
-            this.Te_ServerIp.Properties.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
-            this.Te_ServerIp.Properties.AppearanceFocused.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
-            this.Te_ServerIp.Properties.AppearanceFocused.Options.UseFont = true;
-            this.Te_ServerIp.Properties.AppearanceFocused.Options.UseTextOptions = true;
-            this.Te_ServerIp.Properties.AppearanceFocused.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
-            this.Te_ServerIp.Size = new System.Drawing.Size(400, 26);
-            this.Te_ServerIp.TabIndex = 16;
-            // 
-            // BtnTestConnection
-            // 
-            this.BtnTestConnection.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.BtnTestConnection.Appearance.BorderColor = System.Drawing.Color.Black;
-            this.BtnTestConnection.Appearance.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
-            this.BtnTestConnection.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.BtnTestConnection.Appearance.Options.UseBackColor = true;
-            this.BtnTestConnection.Appearance.Options.UseBorderColor = true;
-            this.BtnTestConnection.Appearance.Options.UseFont = true;
-            this.BtnTestConnection.Appearance.Options.UseForeColor = true;
-            this.BtnTestConnection.Appearance.Options.UseTextOptions = true;
-            this.BtnTestConnection.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.BtnTestConnection.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
-            this.BtnTestConnection.ImageOptions.Image = global::Lember.WerkMa.Properties.Resources.refresh_16x161;
-            this.BtnTestConnection.Location = new System.Drawing.Point(715, 362);
-            this.BtnTestConnection.Name = "BtnTestConnection";
-            this.BtnTestConnection.Size = new System.Drawing.Size(180, 26);
-            this.BtnTestConnection.TabIndex = 15;
-            this.BtnTestConnection.Text = "Verbindung Testen";
-            this.BtnTestConnection.Click += new System.EventHandler(this.BtnTestConnection_Click);
             // 
             // TeServer
             // 
@@ -302,6 +246,67 @@
             this.Te_Password.Size = new System.Drawing.Size(194, 26);
             this.Te_Password.TabIndex = 7;
             // 
+            // Btn_Ping
+            // 
+            this.Btn_Ping.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.Btn_Ping.Appearance.BorderColor = System.Drawing.Color.Black;
+            this.Btn_Ping.Appearance.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
+            this.Btn_Ping.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.Btn_Ping.Appearance.Options.UseBackColor = true;
+            this.Btn_Ping.Appearance.Options.UseBorderColor = true;
+            this.Btn_Ping.Appearance.Options.UseFont = true;
+            this.Btn_Ping.Appearance.Options.UseForeColor = true;
+            this.Btn_Ping.Appearance.Options.UseTextOptions = true;
+            this.Btn_Ping.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.Btn_Ping.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            this.Btn_Ping.ImageOptions.Image = global::Lember.WerkMa.Properties.Resources.stretch_16x161;
+            this.Btn_Ping.Location = new System.Drawing.Point(240, 26);
+            this.Btn_Ping.Name = "Btn_Ping";
+            this.Btn_Ping.Size = new System.Drawing.Size(160, 26);
+            this.Btn_Ping.TabIndex = 17;
+            this.Btn_Ping.Text = "Ping";
+            this.Btn_Ping.Click += new System.EventHandler(this.Btn_Ping_Click);
+            // 
+            // Te_ServerIp
+            // 
+            this.Te_ServerIp.Location = new System.Drawing.Point(5, 26);
+            this.Te_ServerIp.Name = "Te_ServerIp";
+            this.Te_ServerIp.Properties.Appearance.BackColor = System.Drawing.Color.White;
+            this.Te_ServerIp.Properties.Appearance.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
+            this.Te_ServerIp.Properties.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.Te_ServerIp.Properties.Appearance.Options.UseBackColor = true;
+            this.Te_ServerIp.Properties.Appearance.Options.UseFont = true;
+            this.Te_ServerIp.Properties.Appearance.Options.UseForeColor = true;
+            this.Te_ServerIp.Properties.Appearance.Options.UseTextOptions = true;
+            this.Te_ServerIp.Properties.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            this.Te_ServerIp.Properties.AppearanceFocused.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
+            this.Te_ServerIp.Properties.AppearanceFocused.Options.UseFont = true;
+            this.Te_ServerIp.Properties.AppearanceFocused.Options.UseTextOptions = true;
+            this.Te_ServerIp.Properties.AppearanceFocused.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            this.Te_ServerIp.Size = new System.Drawing.Size(229, 26);
+            this.Te_ServerIp.TabIndex = 16;
+            // 
+            // BtnTestConnection
+            // 
+            this.BtnTestConnection.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.BtnTestConnection.Appearance.BorderColor = System.Drawing.Color.Black;
+            this.BtnTestConnection.Appearance.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
+            this.BtnTestConnection.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.BtnTestConnection.Appearance.Options.UseBackColor = true;
+            this.BtnTestConnection.Appearance.Options.UseBorderColor = true;
+            this.BtnTestConnection.Appearance.Options.UseFont = true;
+            this.BtnTestConnection.Appearance.Options.UseForeColor = true;
+            this.BtnTestConnection.Appearance.Options.UseTextOptions = true;
+            this.BtnTestConnection.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.BtnTestConnection.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            this.BtnTestConnection.ImageOptions.Image = global::Lember.WerkMa.Properties.Resources.refresh_16x161;
+            this.BtnTestConnection.Location = new System.Drawing.Point(582, 25);
+            this.BtnTestConnection.Name = "BtnTestConnection";
+            this.BtnTestConnection.Size = new System.Drawing.Size(180, 26);
+            this.BtnTestConnection.TabIndex = 15;
+            this.BtnTestConnection.Text = "Verbindung Testen";
+            this.BtnTestConnection.Click += new System.EventHandler(this.BtnTestConnection_Click);
+            // 
             // Btn_StringRead
             // 
             this.Btn_StringRead.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
@@ -316,7 +321,7 @@
             this.Btn_StringRead.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.Btn_StringRead.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
             this.Btn_StringRead.ImageOptions.Image = global::Lember.WerkMa.Properties.Resources.previous_16x16;
-            this.Btn_StringRead.Location = new System.Drawing.Point(549, 362);
+            this.Btn_StringRead.Location = new System.Drawing.Point(416, 25);
             this.Btn_StringRead.Name = "Btn_StringRead";
             this.Btn_StringRead.Size = new System.Drawing.Size(160, 26);
             this.Btn_StringRead.TabIndex = 3;
@@ -325,7 +330,7 @@
             // 
             // Te_DecryptetConnectionString
             // 
-            this.Te_DecryptetConnectionString.Location = new System.Drawing.Point(143, 363);
+            this.Te_DecryptetConnectionString.Location = new System.Drawing.Point(10, 26);
             this.Te_DecryptetConnectionString.Name = "Te_DecryptetConnectionString";
             this.Te_DecryptetConnectionString.Properties.Appearance.BackColor = System.Drawing.Color.White;
             this.Te_DecryptetConnectionString.Properties.Appearance.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
@@ -356,7 +361,7 @@
             this.Btn_StringSave.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.Btn_StringSave.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
             this.Btn_StringSave.ImageOptions.Image = global::Lember.WerkMa.Properties.Resources.exportfile_16x16;
-            this.Btn_StringSave.Location = new System.Drawing.Point(549, 408);
+            this.Btn_StringSave.Location = new System.Drawing.Point(416, 71);
             this.Btn_StringSave.Name = "Btn_StringSave";
             this.Btn_StringSave.Size = new System.Drawing.Size(160, 26);
             this.Btn_StringSave.TabIndex = 1;
@@ -365,7 +370,7 @@
             // 
             // Te_ConnectionString
             // 
-            this.Te_ConnectionString.Location = new System.Drawing.Point(143, 408);
+            this.Te_ConnectionString.Location = new System.Drawing.Point(10, 71);
             this.Te_ConnectionString.Name = "Te_ConnectionString";
             this.Te_ConnectionString.Properties.Appearance.BackColor = System.Drawing.Color.White;
             this.Te_ConnectionString.Properties.Appearance.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
@@ -394,40 +399,76 @@
             this.groupControl2.Controls.Add(this.Te_ServerIp);
             this.groupControl2.Controls.Add(this.Btn_Ping);
             this.groupControl2.GroupStyle = DevExpress.Utils.GroupStyle.Light;
-            this.groupControl2.Location = new System.Drawing.Point(350, 12);
+            this.groupControl2.Location = new System.Drawing.Point(370, 12);
             this.groupControl2.Name = "groupControl2";
-            this.groupControl2.Size = new System.Drawing.Size(579, 62);
+            this.groupControl2.Size = new System.Drawing.Size(412, 62);
             this.groupControl2.TabIndex = 18;
             this.groupControl2.Text = "Server IP Testen";
+            // 
+            // groupControl3
+            // 
+            this.groupControl3.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.groupControl3.Appearance.BorderColor = System.Drawing.Color.White;
+            this.groupControl3.Appearance.Options.UseBackColor = true;
+            this.groupControl3.Appearance.Options.UseBorderColor = true;
+            this.groupControl3.AppearanceCaption.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.groupControl3.AppearanceCaption.Options.UseForeColor = true;
+            this.groupControl3.GroupStyle = DevExpress.Utils.GroupStyle.Light;
+            this.groupControl3.Location = new System.Drawing.Point(370, 83);
+            this.groupControl3.Name = "groupControl3";
+            this.groupControl3.Size = new System.Drawing.Size(412, 125);
+            this.groupControl3.TabIndex = 19;
+            this.groupControl3.Text = "System";
+            // 
+            // groupControl4
+            // 
+            this.groupControl4.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.groupControl4.Appearance.BorderColor = System.Drawing.Color.White;
+            this.groupControl4.Appearance.Options.UseBackColor = true;
+            this.groupControl4.Appearance.Options.UseBorderColor = true;
+            this.groupControl4.AppearanceCaption.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.groupControl4.AppearanceCaption.Options.UseForeColor = true;
+            this.groupControl4.AutoSize = true;
+            this.groupControl4.Controls.Add(this.Te_DecryptetConnectionString);
+            this.groupControl4.Controls.Add(this.Te_ConnectionString);
+            this.groupControl4.Controls.Add(this.Btn_StringSave);
+            this.groupControl4.Controls.Add(this.BtnTestConnection);
+            this.groupControl4.Controls.Add(this.Btn_StringRead);
+            this.groupControl4.GroupStyle = DevExpress.Utils.GroupStyle.Light;
+            this.groupControl4.Location = new System.Drawing.Point(12, 235);
+            this.groupControl4.Name = "groupControl4";
+            this.groupControl4.Size = new System.Drawing.Size(770, 100);
+            this.groupControl4.TabIndex = 20;
+            this.groupControl4.Text = "Server IP Testen";
             // 
             // Frm_DatabaseManager
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1132, 615);
+            this.Controls.Add(this.groupControl4);
+            this.Controls.Add(this.groupControl3);
             this.Controls.Add(this.groupControl2);
-            this.Controls.Add(this.BtnTestConnection);
             this.Controls.Add(this.groupControl1);
             this.Controls.Add(this.labelControl1);
-            this.Controls.Add(this.Btn_StringRead);
-            this.Controls.Add(this.Te_DecryptetConnectionString);
-            this.Controls.Add(this.Btn_StringSave);
-            this.Controls.Add(this.Te_ConnectionString);
             this.Name = "Frm_DatabaseManager";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Datenbank Manager";
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Te_ServerIp.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TeServer.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Te_Username.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TeDatabase.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Te_Password.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Te_ServerIp.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Te_DecryptetConnectionString.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Te_ConnectionString.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).EndInit();
             this.groupControl2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl4)).EndInit();
+            this.groupControl4.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -454,5 +495,7 @@
         private DevExpress.XtraEditors.TextEdit Te_ServerIp;
         private DevExpress.XtraEditors.SimpleButton Btn_Ping;
         private DevExpress.XtraEditors.GroupControl groupControl2;
+        private DevExpress.XtraEditors.GroupControl groupControl3;
+        private DevExpress.XtraEditors.GroupControl groupControl4;
     }
 }
