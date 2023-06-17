@@ -3,7 +3,9 @@
 
 #region Verweise
 
+using System;
 using System.Data.SqlClient;
+using System.Diagnostics;
 
 #endregion
 
@@ -13,19 +15,24 @@ namespace Lember.WerkMa.Allgemein.Database.DatabaseClass
     {
         #region Methods
 
-        public bool TestServerConnection(string connectionString)
+        public bool TestServerConnection(string connectionString,
+                                         int    connectionTimeout = 5)
         {
-            using (var connection = new SqlConnection(connectionString))
+            try
             {
-                try
+                using (var connection = new SqlConnection(connectionString))
                 {
+                    connection.ConnectionString
+                            += $";Connection Timeout={connectionTimeout}";
                     connection.Open();
+
                     return true;
                 }
-                catch (SqlException)
-                {
-                    return false;
-                }
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine(ex.Message);
+                return false;
             }
         }
 
