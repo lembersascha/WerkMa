@@ -5,8 +5,10 @@
 
 using System;
 using System.Drawing;
+using System.Windows.Forms;
 using DevExpress.XtraEditors;
 using Lember.WerkMa.Allgemein.Database.DatabaseClass;
+using Lember.WerkMa.Allgemein.Sys;
 
 #endregion
 
@@ -87,6 +89,16 @@ namespace Lember.WerkMa.Allgemein.Database.DatabaseForms
                 else
                     Te_ServerIp.BackColor = Color.Red;
             }
+        }
+
+        private void Btn_Restart_Click(object sender, EventArgs e)
+        {
+            RestartApplication.Restart();
+        }
+
+        private void Btn_Close_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
 
         #endregion

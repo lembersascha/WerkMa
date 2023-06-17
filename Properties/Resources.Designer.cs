@@ -83,6 +83,16 @@ namespace Lember.WerkMa.Properties {
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap close_16x16 {
+            get {
+                object obj = ResourceManager.GetObject("close_16x16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap exportfile_16x16 {
             get {
                 object obj = ResourceManager.GetObject("exportfile_16x16", resourceCulture);
@@ -116,6 +126,26 @@ namespace Lember.WerkMa.Properties {
         internal static System.Drawing.Bitmap refresh_16x161 {
             get {
                 object obj = ResourceManager.GetObject("refresh_16x161", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap refresh_16x162 {
+            get {
+                object obj = ResourceManager.GetObject("refresh_16x162", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap show_16x16 {
+            get {
+                object obj = ResourceManager.GetObject("show_16x16", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

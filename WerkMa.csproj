@@ -110,6 +110,7 @@
     <Compile Include="Allgemein\Database\DatabaseForms\Frm_DatabaseManager.Designer.cs">
       <DependentUpon>Frm_DatabaseManager.cs</DependentUpon>
     </Compile>
+    <Compile Include="Allgemein\Sys\RestartApplication.cs" />
     <Compile Include="Hauptfenster.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -157,6 +158,9 @@
     <None Include="Resources\exportfile_16x16.png" />
     <None Include="Resources\previous_16x16.png" />
     <None Include="Resources\addnewdatasource_16x16.png" />
+    <None Include="Resources\show_16x16.png" />
+    <None Include="Resources\refresh_16x162.png" />
+    <None Include="Resources\close_16x16.png" />
     <Content Include="TextTemplate.ico" />
   </ItemGroup>
   <ItemGroup>
