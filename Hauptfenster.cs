@@ -5,7 +5,7 @@
 
 using System;
 using DevExpress.XtraEditors;
-using Lember.WerkMa.Allgemein.Database.DatabaseForms;
+using Lember.WerkMa.Allgemein.Email.Classes;
 
 #endregion
 
@@ -26,12 +26,19 @@ namespace Lember.WerkMa
 
         private void Hauptfenster_Load(object sender, EventArgs e)
         {
+            // MessageBox.Show(DbCon);
         }
 
         private void Btn_OpenForm_Click(object sender, EventArgs e)
         {
-            var frmDatabaseManager = new Frm_DatabaseManager();
-            frmDatabaseManager.Show();
+            //   var frmDatabaseManager = new Frm_DatabaseManager();
+            //   frmDatabaseManager.Show();
+
+            //TODO Email bei Fehler versenden Konfigurieren
+
+            var emailSender = new EmailSender("1und1");
+            emailSender.SendEmail("empfaenger@beispiel.com", "Betreff",
+                    "Inhalt der E-Mail");
         }
 
         #endregion

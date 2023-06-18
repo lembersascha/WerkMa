@@ -110,7 +110,18 @@
     <Compile Include="Allgemein\Database\DatabaseForms\Frm_DatabaseManager.Designer.cs">
       <DependentUpon>Frm_DatabaseManager.cs</DependentUpon>
     </Compile>
+    <Compile Include="Allgemein\Email\Classes\EmailDataProvider.cs" />
+    <Compile Include="Allgemein\Email\Classes\EmailSender.cs" />
+    <Compile Include="Allgemein\Email\Classes\EmailServerData.cs" />
+    <Compile Include="Allgemein\Email\Forms\Dia_EmailDaten.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Allgemein\Email\Forms\Dia_EmailDaten.Designer.cs">
+      <DependentUpon>Dia_EmailDaten.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Allgemein\Email\SqlStrings\SqlEmailDataRead.cs" />
     <Compile Include="Allgemein\Sys\RestartApplication.cs" />
+    <Compile Include="Allgemein\Variablen\VariablenClass\ConnectionString.cs" />
     <Compile Include="Hauptfenster.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -121,6 +132,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Allgemein\Database\DatabaseForms\Frm_DatabaseManager.resx">
       <DependentUpon>Frm_DatabaseManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Allgemein\Email\Forms\Dia_EmailDaten.resx">
+      <DependentUpon>Dia_EmailDaten.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Hauptfenster.resx">
       <DependentUpon>Hauptfenster.cs</DependentUpon>
@@ -179,7 +193,6 @@
     <Folder Include="Allgemein\Login\LoginClass\" />
     <Folder Include="Allgemein\Login\LoginForms\" />
     <Folder Include="Allgemein\Login\LoginSql\" />
-    <Folder Include="Allgemein\Variablen\VariablenClass\" />
     <Folder Include="Allgemein\Variablen\VariablenForms\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

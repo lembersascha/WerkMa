@@ -5,6 +5,9 @@
 
 using System;
 using System.Windows.Forms;
+using Lember.WerkMa.Allgemein.Database.DatabaseClass;
+using Lember.WerkMa.Allgemein.Database.DatabaseForms;
+using Lember.WerkMa.Allgemein.Variablen.VariablenClass;
 
 #endregion
 
@@ -22,7 +25,30 @@ namespace Lember.WerkMa
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Hauptfenster());
+
+            try
+            {
+                var serverConnectionTest = new ServerConnectionTest();
+                var connectionString
+                        = new ConnectionStringReader().ReadAndDecryptConnectionString();
+                if (serverConnectionTest.TestServerConnection(connectionString))
+                {
+                    ConnectionString.SetConnectionStringPath(connectionString);
+
+                    Application.Run(new Hauptfenster());
+                }
+                else
+
+                {
+                    Application.Run(new Frm_DatabaseManager());
+                }
+            }
+            catch (Exception e)
+            {
+                //TODO Email bei Fehler versenden
+                Console.WriteLine(e);
+                throw;
+            }
         }
 
         #endregion
