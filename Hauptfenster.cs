@@ -36,9 +36,12 @@ namespace Lember.WerkMa
 
             //TODO Email bei Fehler versenden Konfigurieren
 
-            var emailSender = new EmailSender("1und1");
-            emailSender.SendEmail("empfaenger@beispiel.com", "Betreff",
-                    "Inhalt der E-Mail");
+            var emailSender = new EmailSender("dogado");
+            emailSender.SendEmail("sascha@lember.net", "Testmail",
+                    "mal schauen ob das geht");
+
+            // var frm_EmailDaten = new Frm_EmailDaten();
+            // frm_EmailDaten.Show();
         }
 
         #endregion

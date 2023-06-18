@@ -34,6 +34,8 @@ namespace Lember.WerkMa.Allgemein.Email.Classes
 
         public void SendEmail(string recipient, string subject, string body)
         {
+            //TODO fehler in dem Mailversand
+
             using (var client = new SmtpClient(serverData.SmtpServer, serverData.Port))
             {
                 client.Credentials

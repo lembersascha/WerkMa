@@ -48,10 +48,10 @@ namespace Lember.WerkMa.Allgemein.Email.Classes
                         if (reader.Read())
                         {
                             emailServerData.SmtpServer = reader["SmtpServer"].ToString();
-                            emailServerData.Port = Convert.ToInt32(reader["Port"]);
-                            emailServerData.EnableSsl = Convert.ToBoolean(reader["Ssl_"]);
-                            emailServerData.User = reader["User"].ToString();
-                            emailServerData.Password = reader["Password"].ToString();
+                            emailServerData.Port       = Convert.ToInt32(reader["Port"]);
+                            emailServerData.EnableSsl  = Convert.ToBoolean(reader["Ssl"]);
+                            emailServerData.User       = reader["User"].ToString();
+                            emailServerData.Password   = reader["Password"].ToString();
                         }
                     }
                 }

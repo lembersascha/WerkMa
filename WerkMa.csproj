@@ -77,6 +77,7 @@
     <Reference Include="DevExpress.Data.v22.2" />
     <Reference Include="DevExpress.Utils.v22.2" />
     <Reference Include="DevExpress.Sparkline.v22.2.Core" />
+    <Reference Include="DevExpress.XtraBars.v22.2, Version=22.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraEditors.v22.2" />
     <Reference Include="DevExpress.Printing.v22.2.Core" />
     <Reference Include="DevExpress.Drawing.v22.2" />
@@ -113,13 +114,22 @@
     <Compile Include="Allgemein\Email\Classes\EmailDataProvider.cs" />
     <Compile Include="Allgemein\Email\Classes\EmailSender.cs" />
     <Compile Include="Allgemein\Email\Classes\EmailServerData.cs" />
-    <Compile Include="Allgemein\Email\Forms\Dia_EmailDaten.cs">
+    <Compile Include="Allgemein\Email\Classes\EmailDataWriter.cs" />
+    <Compile Include="Allgemein\Email\Forms\Frm_EmailDaten.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Allgemein\Email\Forms\Dia_EmailDaten.Designer.cs">
-      <DependentUpon>Dia_EmailDaten.cs</DependentUpon>
+    <Compile Include="Allgemein\Email\Forms\Frm_EmailDaten.Designer.cs">
+      <DependentUpon>Frm_EmailDaten.cs</DependentUpon>
     </Compile>
     <Compile Include="Allgemein\Email\SqlStrings\SqlEmailDataRead.cs" />
+    <Compile Include="Allgemein\Email\SqlStrings\SqlServerDataSave.cs" />
+    <Compile Include="Allgemein\SplashScreens\SaveSuccess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Allgemein\SplashScreens\SaveSuccess.Designer.cs">
+      <DependentUpon>SaveSuccess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Allgemein\SplashScreens\ShowResultForm.cs" />
     <Compile Include="Allgemein\Sys\RestartApplication.cs" />
     <Compile Include="Allgemein\Variablen\VariablenClass\ConnectionString.cs" />
     <Compile Include="Hauptfenster.cs">
@@ -133,8 +143,11 @@
     <EmbeddedResource Include="Allgemein\Database\DatabaseForms\Frm_DatabaseManager.resx">
       <DependentUpon>Frm_DatabaseManager.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Allgemein\Email\Forms\Dia_EmailDaten.resx">
-      <DependentUpon>Dia_EmailDaten.cs</DependentUpon>
+    <EmbeddedResource Include="Allgemein\Email\Forms\Frm_EmailDaten.resx">
+      <DependentUpon>Frm_EmailDaten.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Allgemein\SplashScreens\SaveSuccess.resx">
+      <DependentUpon>SaveSuccess.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Hauptfenster.resx">
       <DependentUpon>Hauptfenster.cs</DependentUpon>

@@ -13,7 +13,7 @@ namespace Lember.WerkMa.Allgemein.Variablen.VariablenClass
     {
         #region Fields
 
-        private static bool _isConnectionStringSet;
+        private static bool isConnectionStringSet;
 
         public static string ConnectionStringPath { get; private set; }
 
@@ -23,10 +23,10 @@ namespace Lember.WerkMa.Allgemein.Variablen.VariablenClass
 
         public static void SetConnectionStringPath(string path)
         {
-            if (!_isConnectionStringSet)
+            if (!isConnectionStringSet)
             {
-                ConnectionStringPath   = path;
-                _isConnectionStringSet = true;
+                ConnectionStringPath  = path;
+                isConnectionStringSet = true;
             }
             else
             {

@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.Btn_OpenForm = new DevExpress.XtraEditors.SimpleButton();
+            this.splashScreenManager = new DevExpress.XtraSplashScreen.SplashScreenManager(this, typeof(global::Lember.WerkMa.Allgemein.SplashScreens.SaveSuccess), true, true);
             this.SuspendLayout();
             // 
             // Btn_OpenForm
@@ -51,6 +52,10 @@
             this.Btn_OpenForm.Text = "Öffne Form";
             this.Btn_OpenForm.Click += new System.EventHandler(this.Btn_OpenForm_Click);
             // 
+            // splashScreenManager
+            // 
+            this.splashScreenManager.ClosingDelay = 500;
+            // 
             // Hauptfenster
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
@@ -69,6 +74,7 @@
         #endregion
 
         private DevExpress.XtraEditors.SimpleButton Btn_OpenForm;
+        private DevExpress.XtraSplashScreen.SplashScreenManager splashScreenManager;
     }
 }
 
